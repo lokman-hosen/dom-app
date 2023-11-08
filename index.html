@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <style>
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+            color: var(--bs-nav-pills-link-active-color);
+            background-color: #0dcaf0;
+        }
+        .nav-link {
+            color: #0dcaf0;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar bg-info" data-bs-theme="dark">
+    <div class="container-fluid">
+    <span class="navbar-text w-100 text-center">
+     <h3 class="text-white text-uppercase"><b>Welcome to our application</b></h3>
+    </span>
+    </div>
+</nav>
+<div class="container mt-5">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="width: 20rem; margin: auto;">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <h6 class="mb-0">Home</h6>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video" aria-selected="false">Videos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery" type="button" role="tab" aria-controls="pills-gallery" aria-selected="false">Gallery</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <h3 class="text-info mb-4">How To Play Videos</h3>
+           <ul>
+               <li>
+                   <h5>What is Lorem Ipsum?</h5>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+               </li>
+               <li>
+                   <h5>Why do we use it?</h5>
+                   <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+               </li>
+               <li>
+                   <h5>Where does it come from?</h5>
+                   <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+               </li>
+           </ul>
+        </div>
+        <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab" tabindex="0">
+            <h3 class="text-info mb-4">Click on tab to play video</h3>
+            <nav>
+                <div class="nav nav-tabs mb-2" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                        <h4>About Sheikh Mujibur Rahman</h4>
+                    </button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        <h4>About Sheikh Hasina</h4>
+                    </button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                        <h4>About beautiful Bangladesh</h4>
+                    </button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <video width="100%" height="100%" controls>
+                        <source src="https://smartbdaccelerator.com/assets/frontend/video/launching_program.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <video width="100%" height="100%" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <video width="100%" height="100%" controls>
+                        <source src="https://smartbdaccelerator.com/assets/frontend/video/launching_program.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery-tab" tabindex="0">
+            <div class="container mt-5">
+                <h3 class="text-info mb-4">Image Gallery</h3>
+
+                <div class="row gallery" id="equipmentGallery">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://uccl.com.bd/img/equipment/3.jpeg">
+                            <img class="img-thumbnail" src="https://uccl.com.bd/img/equipment/3.jpeg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://uccl.com.bd/img/equipment/3.jpeg">
+                            <img class="img-thumbnail" src="https://uccl.com.bd/img/equipment/3.jpeg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://uccl.com.bd/img/equipment/3.jpeg">
+                            <img class="img-thumbnail" src="https://uccl.com.bd/img/equipment/3.jpeg">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <a href="https://uccl.com.bd/img/equipment/3.jpeg">
+                            <img class="img-thumbnail" src="https://uccl.com.bd/img/equipment/3.jpeg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run(".gallery", {
+        animation: "slideIn"
+    });
+</script>
+</body>
+</html>
