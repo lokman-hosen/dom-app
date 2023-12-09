@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DOM</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>বঙ্গবন্ধু শেখ মুজিবুর রহমান নভোথিয়েটার রাজশাহী</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
     <style>
         .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
             color: var(--bs-nav-pills-link-active-color);
@@ -14,59 +15,66 @@
         .nav-link {
             color: #0dcaf0;
         }
+        .text-bold{
+            font-weight: 600;
+        }
+        .sub-title{
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
 <nav class="navbar bg-info" data-bs-theme="dark">
     <div class="container-fluid">
     <span class="navbar-text w-100 text-center">
-     <h3 class="text-white text-uppercase py-3"><b>বঙ্গবন্ধু শেখ মুজিবুর রহমান নভোথিয়েটার রাজশাহী</b></h3>
+     <h1 class="text-white text-uppercase py-3"><b>বঙ্গবন্ধু শেখ মুজিবুর রহমান নভোথিয়েটার রাজশাহী</b></h1>
     </span>
     </div>
 </nav>
 <div class="container mt-5">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="width: 30rem; margin: auto;">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="width: 70%; margin: auto;">
         <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                <h4 class="mb-0">হোম</h4>
+            <button class="nav-link mx-2 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <h1 class="mb-0 text-bold"><i class="fa fa-home"></i> হোম</h1>
             </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video" aria-selected="false">
-                <h4>ভিডিও গ্যালারি</h4>
+            <button class="nav-link mx-2" id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab" aria-controls="pills-video" aria-selected="false">
+                <h1 class="text-danger text-bold"> <i class="fa fa-video"></i> ভিডিও গ্যালারি</h1>
             </button>
         </li>
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery" type="button" role="tab" aria-controls="pills-gallery" aria-selected="false">
-                <h4>ইমেজ গ্যালারি</h4>
+            <button class="nav-link mx-2" id="pills-gallery-tab" data-bs-toggle="pill" data-bs-target="#pills-gallery" type="button" role="tab" aria-controls="pills-gallery" aria-selected="false">
+                <h1 class="text-success text-bold"><i class="fa fa-images"></i> ছবির গ্যালারি</h1>
             </button>
         </li>
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-            <h3 class="text-info mb-4 mt-5">টেবিল টাইপ টাচ স্ক্রিন মেনু</h3>
-           <ul>
+            <h1 class="mt-5 text-warning"><b>স্বাগতম! বঙ্গবন্ধু শেখ মুজিবুর রহমান নভোথিয়েটার রাজশাহী। </b></h1>
+            <h1 class="text-info mb-4 mt-5">টেবিল টাইপ টাচ স্ক্রিন মেনু। </h1>
+           <ul class="list-unstyled">
                <li>
-                   <h5>ভিডিও গ্যালারি দেখতে "ভিডিও গ্যালারি" মেনুতে ক্লিক করুন.</h5>
-                   <p>"ভিডিও গ্যালারি" মেনুতে ক্লিক করলে বিভিন্ন ভিডিও দেখতে পারবেন।  পছন্দের ভিডিও দেখতে সাব-মেনুতে ক্লিক করতে হবে।</p>
+                   <h2 class="text-primary">১. ভিডিও গ্যালারি দেখতে "ভিডিও গ্যালারি" মেনুতে ক্লিক করুন। </h2>
+                   <p class="sub-title">"ভিডিও গ্যালারি" মেনুতে ক্লিক করলে বিভিন্ন ভিডিও দেখতে পারবেন।  পছন্দের ভিডিও দেখতে সাব-মেনুতে ক্লিক করতে হবে।</p>
                </li>
-               <li>
-                   <h5>ইমেজ গ্যালারি দেখতে "ইমেজ গ্যালারি" মেনুতে ক্লিক করুন.</h5>
-                   <p>"ইমেজ গ্যালারি" মেনুতে ক্লিক করলে বিভিন্ন ইমেজ দেখতে পারবেন। পছন্দের ইমেজ দেখতে সাব-মেনুতে ক্লিক করতে হবে।</p>
+               <li class="mt-5">
+                   <h2 class="text-primary">২. ছবির গ্যালারি দেখতে "ছবির গ্যালারি" মেনুতে ক্লিক করুন.</h2>
+                   <p class="sub-title">"ছবির গ্যালারি" মেনুতে ক্লিক করলে বিভিন্ন ইমেজ দেখতে পারবেন। পছন্দের ইমেজ দেখতে সাব-মেনুতে ক্লিক করতে হবে।</p>
                </li>
            </ul>
         </div>
         <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab" tabindex="0">
-            <nav>
+            <nav class="mt-5">
                 <div class="nav nav-tabs mb-2" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                        <h4>বঙ্গবন্ধু শেখ মুজিবুর রহমান</h4>
+                        <h2 class="text-bold"><i class="fa fa-user-tie"></i> বঙ্গবন্ধু শেখ মুজিবুর রহমান</h2>
                     </button>
                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                        <h4>কুদরত-ই খুদা</h4>
+                        <h2 class="text-bold"><i class="fa fa-user-tie"></i> কুদরত-ই খুদা</h2>
                     </button>
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
-                        <h4>জামাল নজরুল ইসলাম</h4>
+                        <h2 class="text-bold"><i class="fa fa-user-tie"></i> জামাল নজরুল ইসলাম</h2>
                     </button>
                 </div>
             </nav>
@@ -92,20 +100,20 @@
             </div>
         </div>
         <div class="tab-pane fade" id="pills-gallery" role="tabpanel" aria-labelledby="pills-gallery-tab" tabindex="0">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="home-mujib-tab" data-bs-toggle="tab" data-bs-target="#home-mujib-tab-pane" type="button" role="tab" aria-controls="home-mujib-tab-pane" aria-selected="true">
-                        <h4>বঙ্গবন্ধু শেখ মুজিবুর রহমান</h4>
+                        <h2 class="text-bold"><i class="fa fa-user-tie"></i> বঙ্গবন্ধু শেখ মুজিবুর রহমান</h2>
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="kudrot-tab" data-bs-toggle="tab" data-bs-target="#kudrot-tab-pane" type="button" role="tab" aria-controls="kudrot-tab-pane" aria-selected="false">
-                        <h4>কুদরত-ই খুদা</h4>
+                        <h2 class="text-bold"><i class="fa fa-user-tie"></i> কুদরত-ই খুদা</h2>
                     </button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="jamal-tab" data-bs-toggle="tab" data-bs-target="#jamal-tab-pane" type="button" role="tab" aria-controls="jamal-tab-pane" aria-selected="false">
-                        <h4>জামাল নজরুল ইসলাম</h4>
+                        <h2 class="text-bold"><i class="fa fa-user-tie"></i> জামাল নজরুল ইসলাম</h2>
                     </button>
                 </li>
             </ul>
